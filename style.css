@@ -1,5 +1,14 @@
 body {
-    background-color: rgb(2, 38, 146);
+    background-color: rgb(46, 85, 203);
     
 }
     
+@font-face {
+    font-family: 'CoffeeHealing';
+    src: url('./fonts/CoffeeHealing-1GrKe.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'CoffeeHealing', sans-serif;
+    text-align: center;
+}
