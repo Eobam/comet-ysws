@@ -8,10 +8,10 @@ body {
 }
 
 #myContainer {
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     position: relative;
-    background: yellow;
+    background: rgb(104, 135, 175);
   }
   
   #myAnimation {
