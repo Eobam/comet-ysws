@@ -7,6 +7,13 @@ body {
     
 }
 
+
+#myParagraph {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+
 #myContainer {
     width: 800px;
     height: 800px;

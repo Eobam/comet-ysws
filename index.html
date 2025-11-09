@@ -1,56 +1,56 @@
 <!DOCTYPE html>
-</html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content=
-          "width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Comet YSWS</h1>
-<nav>
+  <h1>Comet YSWS</h1>
+  <nav>
     <a href="#1">1</a>
     <a href="#2">2</a>
     <a href="#3">3</a>
+  </nav>
 
+  <div class="scrolling-box">
+    <section id="0">
+      <p>
+        <button onclick="myMove()">Click Me</button>
+      </p>
 
-</nav>
-<p>
-    <button onclick="myMove()">Click Me</button> 
-    </p>
-    
-    <div id ="myContainer">
-    <div id ="myAnimation"></div>
-    </div>
-    
-    <script>
-    var id = null;
-    function myMove() {
-      var elem = document.getElementById("myAnimation");   
-      var pos = 0;
-      clearInterval(id);
-      id = setInterval(frame, 10);
-      function frame() {
-        if (pos == 350) {
+      <div id="myContainer">
+        <div id="myAnimation"></div>
+      </div>
+
+      <script>
+        var id = null;
+
+        function myMove() {
+          var elem = document.getElementById("myAnimation");
+          var container = document.getElementById("myContainer");
+          var pos = 0;
           clearInterval(id);
-        } else {
-          pos++; 
-          elem.style.top = pos + 'px'; 
-          elem.style.left = pos + 'px'; 
+          id = setInterval(frame, 10);
+
+          function frame() {
+            if (pos == 350) {
+              clearInterval(id);
+              container.innerHTML = "Hello, <strong>world!</strong>";
+            } else {
+              pos++;
+              elem.style.top = pos + "px";
+              elem.style.left = pos + "px";
+            }
+          }
         }
-      }
-    }
-    </script>
-    
-<div class="scrolling-box">
+      </script>
+    </section>
+
     <section id="1">This is the first section</section>
     <section id="2">This is the second section</section>
     <section id="3">This is the third section</section>
   </div>
-
-
-
 </body>
-
 </html>
